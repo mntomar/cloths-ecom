@@ -1,24 +1,42 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# General ignores for all environments
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+*.log
+.env
+.env.
+
+# Node-related
+node_modules/
+
+# Backend ignores
+/backend/node_modules/
+/backend/dist/
+/backend/.env
+/backend/.env.*.local
+/backend/.cache/
+/backend/coverage/
+backend/*.log
+
+# Frontend ignores
+/frontend/node_modules/
+/frontend/build/
+frontend/.env
+/frontend/.env.*.local
+/frontend/.cache/
+frontend/coverage/
+frontend/*.log
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Lint and test cache
+.eslintcache
+jest-coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Others
+*.tgz
