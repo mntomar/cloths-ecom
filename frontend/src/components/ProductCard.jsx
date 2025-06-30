@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
     setSelectedProduct(product);
     setCurrentPage('productDetail');
   };
-  console.log("this is Value" , product.images[0])
+  
   return (
     <div
       className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl relative cursor-pointer"
